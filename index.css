@@ -1,6 +1,5 @@
 header {
-    margin: 0;
-    padding: 0;
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,9 +50,25 @@ input[name=Search] {
     width: 8vw;
   
 }
+
+main {
+    background-color: antiquewhite;
+   
+}
 .little-frame {
     display: flex;
     flex-direction: column;
+    background-image: url(https://picsum.photos/1000?1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5;
+    padding: 5;
+
+    
+}
+
+h2 {
+    color: rgba(227, 203, 47, 0.888);
 }
 
 .rating-line {
@@ -79,3 +94,27 @@ input[name=Search] {
     max-width: 50%;
 
 }
+.red {
+    color: red;
+    font-weight: bold;    
+}
+.one {
+    display: inline-block;
+}
+.one p {
+    display: inline-block;
+
+}
+
+.play-minimize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid black;
+    padding: 0rem 3rem 0rem;
+    background-color: red;
+    color: white;
+    width: 10vw;
+}
+
