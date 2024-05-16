@@ -109,7 +109,8 @@ h2 {
 }
 .red {
     color: red;
-    font-weight:bold;    
+    font-weight:bold; 
+     
 }
 
 .play-minimize {
@@ -124,10 +125,11 @@ h2 {
     color: white;
     width: 10vw;
     border-radius: 10px;
+
 }
 
 .sliding-movie {
-background: rgb(240, 235, 235);
+background: rgb(0, 0, 0);
 
 }
 .writings {
@@ -139,7 +141,7 @@ background: rgb(240, 235, 235);
 display: flex;
 border: 1px solid black;
 justify-content: space-between;
-overflow: auto;
+overflow-x: auto;
 scrollbar-color: blue purple;
 
 }
@@ -176,34 +178,45 @@ scrollbar-color: blue purple;
 }
 
 h4 {
-
     margin:0;
 }
-/*footer*/
+/*-----footer-------*/
 footer {
     display: flex;
     flex-direction: column;
-    
-    margin:0 10px;
+    background: black;
+    margin:0 ;
+    color: white;
+   
+}
+.down {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30vw;
+    column-gap: 3vw;
    
 }
 .boring-topics {
     display: flex;
-    flex-direction: row;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    justify-content: space-between;
-    
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    justify-content: space-between; 
 }
 .upper-line {
     display: flex;
     justify-content: space-between;
-    gap: 35px;
     width: 60vw;
+    
+}
+.upper-line a {
+    text-decoration: none;
+    color: white;
+    gap: 35px;
+    
 }
 .lorem-line {
-    display: flex;
-    align-self: flex-start;
     width: 60vw;
     padding: 0;
    
@@ -211,31 +224,23 @@ footer {
 
 .half-screen {
    display: flex;
-   justify-content: space-between;
+   align-items: flex-start;
+   column-gap: 2vw;
 
-}
-.left-half {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 30vw;
-   
-}
-.upper-left {
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
-    width: 30vw;
-    
 }
 
 .social-icons {
     display: flex;
     gap: 0.5rem;
     padding: 16px;
+    margin-top: 1rem;
+    
 
 }   
-
+.add-address{
+    margin: 0;
+    
+}
 
 .add-icons {
     display: flex;
@@ -252,4 +257,8 @@ footer {
     height: 30px;
    
     
+}
+h5 {
+    margin: 0 ;
+    padding: 0 0.8rem;
 }
