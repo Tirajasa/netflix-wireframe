@@ -1,7 +1,9 @@
 * {
     font-family: "Helvatica", sans-serif;
 }
-
+body{
+    min-width: 576px;
+}
 header {
    
     display: flex;
@@ -193,21 +195,23 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 30vw;
     column-gap: 3vw;
-   
+    flex-wrap: wrap;
+    flex:1
 }
 .boring-topics {
     display: flex;
     flex-direction: column;
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    justify-content: space-between; 
+     
+     
+    
 }
 .upper-line {
     display: flex;
-    justify-content: space-between;
-    width: 60vw;
+    gap: 1rem;
+    
     
 }
 .upper-line a {
@@ -217,15 +221,15 @@ footer {
     
 }
 .lorem-line {
-    width: 60vw;
-    padding: 0;
    
+    padding: 0;
+    
 }
 
 .half-screen {
    display: flex;
-   align-items: flex-start;
    column-gap: 2vw;
+  
 
 }
 
@@ -239,6 +243,9 @@ footer {
 }   
 .add-address{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    
     
 }
 
