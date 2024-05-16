@@ -13,11 +13,13 @@ header {
     align-items: center;
     justify-content: space-between;
     background: black;
-    padding: 1rem 1rem 1rem;
+    padding: 0rem 1rem 0rem;
 
 }
 h1 {
     color: tomato;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;    
 }
 h1:hover {
     color: red;
