@@ -1,17 +1,27 @@
 * {
     font-family: "Helvatica", sans-serif;
+
 }
 body{
     min-width: 576px;
+    background: black;
+    max-width: 2000px;
 }
 header {
    
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: black;
+    padding: 1rem 1rem 1rem;
 
 }
-
+h1 {
+    color: tomato;
+}
+h1:hover {
+    color: red;
+}
 .top-panel {
     display: flex;
     gap: 1rem
@@ -19,7 +29,7 @@ header {
 
 .top-panel a {
     text-decoration: none;
-    color: black;
+    color: rgb(245, 188, 188);
 }
 .top-panel a:hover {
     color: red;
@@ -49,6 +59,13 @@ input[name=Search] {
 }
 .user-panel .fa-regular.fa-bell {
     margin: 0.1rem;
+    background-color: tomato;
+    border-radius: 10px;
+    padding: 0.2rem;
+
+}
+.user-panel .fa-regular.fa-bell:hover{
+    scale: 1.2;
 
 }
 .user-panel img {
@@ -56,10 +73,7 @@ input[name=Search] {
     width: 8vw;
   
 }
-body {
-    margin: 0;
-    padding: 0;
-}
+
 main {
     background-color: antiquewhite;
     margin: 0vw;
@@ -76,13 +90,15 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 5px;
-    padding: 15px;
+    padding: 1rem;
+    aspect-ratio: 16/9;
+   
 
 }
 
 
 h2 {
-    color: rgba(227, 203, 47, 0.888);
+    color: rgb(250, 192, 192);
 }
 
 .rating-line {
@@ -110,7 +126,7 @@ h2 {
 
 }
 .red {
-    color: red;
+    color: tomato;
     font-weight:bold; 
      
 }
@@ -123,13 +139,15 @@ h2 {
     gap: 0.3rem;
     border: 1px solid black;
     padding: 0rem 3rem 0rem;
-    background-color: red;
+    background-color: tomato;
     color: white;
     width: 10vw;
     border-radius: 10px;
 
 }
-
+.play-minimize:hover {
+    background: red;
+}
 .sliding-movie {
 background: rgb(0, 0, 0);
 
@@ -137,6 +155,7 @@ background: rgb(0, 0, 0);
 .writings {
  display: flex;
  justify-content: space-between;
+ color: white;
 
 }
 .video-line {
@@ -144,9 +163,11 @@ display: flex;
 border: 1px solid black;
 justify-content: space-between;
 overflow-x: auto;
-scrollbar-color: blue purple;
+scrollbar-color: tomato transparent;
 
 }
+
+
 .video {
     border: 1px solid black;
     width:30vw;
@@ -173,15 +194,42 @@ scrollbar-color: blue purple;
     gap: 0.3rem;
     border: 1px solid black;
     padding: 0 10px;
-    background-color: red;
+    background-color: tomato;
     color: white;
     padding: 0.5rem 0.8rem;
     border-radius: 10px;
 }
+.play-min:hover {
+    background: red;
+}
 
 h4 {
     margin:0;
+    color: rgb(245, 188, 188);
 }
+
+.num {
+    margin: 0;
+    padding: 0;
+  
+    
+}
+.birr {
+    margin-left: -2.7rem;
+}
+.ikii {
+    margin-left: -0.4rem;
+}
+.ucc {
+    margin-right: -0.7rem;
+}
+.bess {
+    margin-left: -0.2rem
+}
+.dortt {
+    margin-right: -2.2rem;
+}
+
 /*-----footer-------*/
 footer {
     display: flex;
@@ -189,27 +237,30 @@ footer {
     background: black;
     margin:0 ;
     color: white;
-   
+    
 }
 .down {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     column-gap: 3vw;
-    flex-wrap: wrap;
-    flex:1
+    
+    
+    
+    
 }
 .boring-topics {
     display: flex;
     flex-direction: column;
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-     
-     
     
 }
+
 .upper-line {
     display: flex;
+    padding: 1rem 0rem 0 1rem;
     gap: 1rem;
     
     
@@ -218,17 +269,23 @@ footer {
     text-decoration: none;
     color: white;
     gap: 35px;
+    margin: 0;
+    padding: 0;
     
 }
 .lorem-line {
+   display: flex;
+    padding: 0 1rem;
+    text-wrap: balance;
    
-    padding: 0;
-    
+   
 }
 
 .half-screen {
    display: flex;
    column-gap: 2vw;
+   padding: 1rem ;
+   
   
 
 }
@@ -236,7 +293,7 @@ footer {
 .social-icons {
     display: flex;
     gap: 0.5rem;
-    padding: 16px;
+    padding: 1rem;
     margin-top: 1rem;
     
 
@@ -268,4 +325,16 @@ footer {
 h5 {
     margin: 0 ;
     padding: 0 0.8rem;
+    color: white;
+}
+
+@media (max-width:704) {
+    .body {
+        min-width: 300px;
+    }
+    .down {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
